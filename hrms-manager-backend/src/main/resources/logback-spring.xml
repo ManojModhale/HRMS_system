@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="LOGS_HOME" value="logs"/> 
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="DAILY_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>src/main/resources/logs/application.log</file> 
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>src/main/resources/logs/application.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    
+    <appender name="FRONTEND_DAILY_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>src/main/resources/frontend-logs/frontend.log</file> 
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>src/main/resources/frontend-logs/frontend.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="DAILY_FILE"/>
+    </root>
+
+    <logger name="com.hrms.backend" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="DAILY_FILE"/>
+    </logger>
+
+    <logger name="org.hibernate.SQL" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="DAILY_FILE"/>
+    </logger>
+    
+    <logger name="FrontendLogger" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE"/> <appender-ref ref="FRONTEND_DAILY_FILE"/>
+    </logger>
+
+    <logger name="org.springframework" level="info"/>
+    <logger name="org.springframework.boot" level="info"/>
+    <logger name="org.springframework.web" level="info"/>
+    <logger name="org.hibernate" level="info"/> 
+    <logger name="org.springframework.data.jpa" level="info"/>
+    <logger name="com.zaxxer.hikari" level="info"/>
+    <logger name="org.hibernate.hql.internal.ast.AST" level="info"/>
+    <logger name="org.hibernate.engine.internal.StatisticalLogging" level="info"/>
+    <logger name="org.hibernate.validator" level="info"/>
+
+</configuration>

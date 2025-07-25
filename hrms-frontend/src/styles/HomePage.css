@@ -1,0 +1,574 @@
+/* src/styles/HomePage.css */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Define CSS Variables for Colors for easier management */
+:root {
+    --primary-blue: #1976d2;
+    --dark-grey: #343a40;
+    --accent-yellow: #ffeb3b;
+    --light-grey-bg: #f8f9fa;
+    --light-blue-bg: #e9f0f7;
+    --text-color-dark: #343a40;
+    --text-color-light: #555;
+    --white: #ffffff;
+}
+
+/* General Body and Container Styles */
+.hrms-landing-page {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color-dark);
+    background-color: var(--light-grey-bg);
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Custom Bootstrap Overrides/Extensions */
+.bg-light-custom {
+    background-color: var(--light-grey-bg) !important;
+}
+
+.text-primary-custom {
+    color: var(--primary-blue) !important;
+}
+
+.text-secondary-custom {
+    color: var(--text-color-light) !important;
+}
+
+
+/* Reusable Section Title Styles */
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 3.5rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title-underline {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background-color: var(--accent-yellow);
+    border-radius: 3px;
+}
+
+/* Specific for Benefits section title */
+.benefits-section .section-title {
+    color: var(--white);
+}
+
+.section-title-underline-yellow { /* For benefits section title underline */
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background-color: var(--accent-yellow);
+    border-radius: 3px;
+}
+
+
+/* Navbar Styles */
+.hrms-navbar {
+    background-color: var(--dark-grey);
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.navbar-brand-custom {
+    color: var(--white) !important;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.brand-icon {
+    font-size: 2rem;
+    color: var(--accent-yellow);
+}
+
+.nav-link-custom {
+    color: var(--white) !important;
+    font-weight: 500;
+    margin-right: 15px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-link-custom:hover {
+    color: var(--accent-yellow) !important;
+    border-bottom: 2px solid var(--accent-yellow);
+}
+
+.signup-button {
+    background-color: var(--accent-yellow) !important;
+    border-color: var(--accent-yellow) !important;
+    color: var(--primary-blue) !important;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-button:hover {
+    background-color: #ffe000 !important;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, rgba(25, 118, 210, 0.95), rgba(10, 77, 158, 0.95)), url('https://placehold.co/1500x800/1976d2/ffffff?text=HRMS+Background') no-repeat center center / cover;
+    color: var(--white);
+    min-height: 90vh;
+    padding: 100px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title {
+    font-size: 4.2rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+}
+
+.hero-cta-button {
+    background-color: var(--accent-yellow) !important;
+    border-color: var(--accent-yellow) !important;
+    color: var(--primary-blue) !important;
+    font-weight: 700;
+    padding: 16px 40px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-learn-more-button {
+    color: var(--white) !important;
+    border-color: var(--white) !important;
+    font-weight: 600;
+    padding: 16px 40px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+}
+
+/* Features Section */
+.features-section {
+    background-color: var(--light-grey-bg);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.feature-card-new {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+}
+
+.feature-card-new:hover {
+    background-color: var(--light-blue-bg);
+}
+
+.feature-icon-new {
+    font-size: 4.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 25px;
+}
+
+.feature-title-new {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color-dark);
+    margin-bottom: 15px;
+}
+
+.feature-text-new {
+    font-size: 1.1rem;
+    color: var(--text-color-light);
+    line-height: 1.6;
+}
+
+/* New Section: Benefits */
+.benefits-section {
+    background: linear-gradient(to right, var(--primary-blue), var(--dark-grey));
+    color: var(--white);
+    padding: 80px 0;
+}
+
+.benefit-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.benefit-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.benefit-icon {
+    font-size: 4rem;
+    color: var(--accent-yellow);
+    margin-bottom: 20px;
+}
+
+.benefit-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+.benefit-text {
+    font-size: 1.1rem;
+    color: #f0f8ff;
+    line-height: 1.6;
+}
+
+
+/* How It Works Section */
+.how-it-works-section {
+    background-color: var(--white);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.step-item {
+    background-color: var(--light-grey-bg);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+.step-number {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--accent-yellow);
+    color: var(--primary-blue);
+    font-size: 2.5rem;
+    font-weight: 800;
+    border: 3px solid var(--primary-blue);
+}
+
+.step-title-new {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--text-color-dark);
+    margin-bottom: 15px;
+}
+
+.step-text-new {
+    font-size: 1.1rem;
+    color: var(--text-color-light);
+    line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: var(--light-blue-bg);
+    padding: 80px 0;
+}
+
+.testimonial-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+}
+
+.testimonial-quote-icon {
+    font-size: 3rem;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 1.15rem;
+    font-style: italic;
+    line-height: 1.7;
+    color: var(--text-color-dark);
+}
+
+.testimonial-author {
+    font-size: 1rem;
+    color: var(--text-color-light);
+    margin-top: 20px;
+}
+
+/* Contact Us Section */
+.contact-us-section {
+    background-color: var(--white);
+    padding: 80px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.contact-intro-text {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-color-light);
+    font-size: 1.15rem;
+}
+
+.contact-details {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.contact-detail-icon {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+.contact-detail-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color-dark);
+}
+
+.contact-detail-text {
+    font-size: 1rem;
+    color: var(--text-color-light);
+}
+
+.contact-form-container {
+    background-color: var(--light-grey-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-container .form-label-custom {
+    font-weight: 500;
+    color: var(--text-color-dark);
+}
+
+.contact-form-container .form-control,
+.contact-form-container .form-control:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+}
+
+.contact-form-container .form-control:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.25rem rgba(25, 118, 210, 0.25);
+}
+
+.send-message-button {
+    background-color: var(--primary-blue) !important;
+    border-color: var(--primary-blue) !important;
+    color: var(--white) !important;
+    font-weight: 700;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.send-message-button:hover {
+    background-color: #1565c0 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+.hrms-footer {
+    background-color: var(--dark-grey);
+    color: var(--light-grey-bg);
+    padding: 40px 0;
+    font-size: 0.95rem;
+}
+
+.footer-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-yellow);
+}
+
+.footer-link {
+    color: var(--light-grey-bg) !important;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--primary-blue) !important;
+}
+
+
+/* --- Responsive Adjustments (Media Queries) --- */
+
+/* Small devices (phones, 576px and below) */
+@media (max-width: 576px) {
+    .hero-section {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-cta-button,
+    .hero-learn-more-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+        margin-bottom: 15px !important;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .feature-card-new, .step-item, .testimonial-card, .benefit-item {
+        padding: 20px;
+    }
+
+    .feature-icon-new, .benefit-icon {
+        font-size: 3.5rem;
+    }
+
+    .feature-title-new, .benefit-title, .step-title-new {
+        font-size: 1.4rem;
+    }
+
+    .step-number {
+        width: 55px;
+        height: 55px;
+        font-size: 2rem;
+    }
+
+    .testimonial-quote-icon {
+        font-size: 3rem;
+    }
+
+    .testimonial-text {
+        font-size: 1.2rem;
+    }
+
+    .contact-intro-text {
+        font-size: 1rem;
+    }
+
+    .contact-details .col-md-4 {
+        margin-bottom: 30px;
+    }
+    .contact-details .col-md-4:last-child {
+        margin-bottom: 0;
+    }
+
+    .contact-detail-icon {
+        font-size: 2rem;
+    }
+
+    .contact-detail-title {
+        font-size: 1.1rem;
+    }
+
+    .contact-form-container {
+        padding: 25px;
+    }
+
+    .send-message-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .footer-brand {
+        font-size: 1.3rem;
+    }
+
+    .footer-link {
+        margin-left: 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+    .hrms-navbar .navbar-nav {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .nav-link-custom, .signup-button {
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .contact-details .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Large devices (desktops, 992px and below) */
+@media (max-width: 992px) {
+    .hero-section {
+        min-height: 70vh;
+    }
+    .hero-title {
+        font-size: 3.8rem;
+    }
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+    /* Features and Benefits sections will stack 2 per row on md, 1 per row on xs */
+    .features-section .col-md-6,
+    .benefits-section .col-md-6,
+    .how-it-works-section .col-md-6,
+    .testimonials-section .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+/* Extra large devices (1200px and below) */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+}

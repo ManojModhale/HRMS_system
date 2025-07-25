@@ -1,0 +1,285 @@
+/* src/styles/LoginForm.css */
+
+/* Re-import Inter font for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css'); /* For Remix Icons */
+
+
+/* Base form container styles (reused from RegisterForm.css for consistency) */
+.form-container-new {
+    background-color: #ffffff; /* White background */
+    padding: 3rem 2.5rem; /* Increased padding */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Stronger, softer shadow */
+    width: 100%;
+    max-width: 450px; /* Max width for the form */
+    margin: 20px auto; /* Center with some margin top/bottom */
+    box-sizing: border-box; /* Include padding in width */
+    position: relative; /* For animation purposes */
+    overflow: hidden; /* Ensures shadow/border-radius are respected */
+    border: 1px solid #e0e0e0; /* Subtle border */
+}
+
+/* Specific styling for the login form container if needed, can override .form-container-new */
+.login-form-container {
+    /* Add any login-specific overrides here, e.g., if it needs different padding or max-width */
+}
+
+
+/* Form Header/Title styles */
+.title-new {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    color: #4f46e5; /* text-indigo-700 (primary-like color) */
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.subtitle-new {
+    font-size: 1.1rem; /* text-lg */
+    color: #6b7280; /* text-gray-600 */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-heading-new {
+    font-size: 1.75rem; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+    color: #1f2937; /* text-gray-800 */
+    margin-bottom: 1.5rem;
+    text-align: left; /* Align to left */
+    border-bottom: 1px solid #e5e7eb; /* Subtle line below heading */
+    padding-bottom: 1rem;
+}
+
+
+/* Floating Input Wrapper */
+.floating-label-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem; /* Spacing between inputs */
+}
+
+/* Input Field Styles */
+.input-field-new {
+    width: 100%;
+    padding: 1rem 1.25rem; /* py-3 px-4 */
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    border-radius: 8px; /* Slightly more rounded */
+    font-size: 1rem;
+    color: #1f2937; /* text-gray-900 */
+    background-color: #f9fafb; /* Light background for input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    outline: none;
+    -webkit-appearance: none; /* Remove default browser styling */
+    -moz-appearance: textfield; /* Remove Firefox specific styling for number inputs */
+}
+
+.input-field-new:focus {
+    border-color: #4f46e5; /* primary focus color */
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2); /* Soft focus ring */
+    background-color: #ffffff; /* White background on focus */
+}
+
+/* Placeholder visibility for floating label effect */
+.input-field-new:placeholder-shown + .label-new {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #9ca3af; /* Light gray for placeholder text */
+}
+
+/* Floating Label Styles */
+.label-new {
+    position: absolute;
+    left: 1.25rem; /* Align with input padding */
+    top: -0.5rem; /* Move above the input field */
+    font-size: 0.8rem; /* Smaller font for floated label */
+    color: #6b7280; /* Darker gray for active label */
+    background-color: #ffffff; /* Match container background */
+    padding: 0 0.25rem;
+    transition: all 0.2s ease-out;
+    pointer-events: none; /* Make label non-interactive */
+    z-index: 1; /* Ensure label is above input when floating */
+}
+
+/* Input error state */
+.input-error {
+    border-color: #ef4444 !important; /* Red border for error */
+}
+.error-text {
+    color: #ef4444; /* text-red-500 */
+    font-size: 0.875rem; /* text-sm */
+    margin-top: 0.5rem; /* Space below input */
+    text-align: left;
+    padding-left: 0.25rem; /* Small indent */
+}
+
+/* Toggle password visibility button */
+.toggle-visibility-button {
+    position: absolute;
+    right: 1.25rem; /* Align with input padding */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #9ca3af; /* Icon color */
+    font-size: 1.2rem;
+    transition: color 0.2s ease-in-out;
+    outline: none;
+    z-index: 2; /* Ensure button is above input */
+}
+
+.toggle-visibility-button:hover {
+    color: #6b7280; /* Darker on hover */
+}
+
+
+/* Submit button styles (reused from RegisterForm.css) */
+.submit-button-new {
+    width: 100%;
+    padding: 1rem 1.5rem; /* py-4 px-6 */
+    background: linear-gradient(135deg, #4f46e5, #4338ca); /* Deep indigo gradient */
+    color: #ffffff;
+    font-size: 1.15rem; /* Slightly larger font */
+    font-weight: 600;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3); /* Soft shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button-new:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4); /* Enhanced shadow on hover */
+}
+
+.submit-button-new:active {
+    transform: translateY(0); /* Press down effect */
+    box-shadow: 0 2px 5px rgba(79, 70, 229, 0.2);
+}
+
+.submit-button-new:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Link hover effect (reused from RegisterForm.css) */
+.link-new {
+    position: relative;
+    color: #4f46e5; /* Primary color for links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-new::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Thicker underline */
+    bottom: -4px; /* Space below text */
+    left: 0;
+    background-color: #4f46e5; /* Match link color */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+
+.link-new:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* General spacing */
+.space-y-6 > *:not([hidden]) ~ *:not([hidden]) {
+    margin-top: 1.5rem; /* Equivalent to Tailwind's space-y-6 */
+}
+.mt-6 {
+    margin-top: 1.5rem; /* Equivalent to Tailwind's mt-6 */
+}
+.text-center {
+    text-align: center;
+}
+.text-gray-600 {
+    color: #4b5563; /* Equivalent to text-gray-600 */
+}
+.font-medium {
+    font-weight: 500;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container-new {
+        padding: 2rem 1.5rem;
+        margin: 15px auto;
+    }
+    .title-new {
+        font-size: 2rem;
+    }
+    .subtitle-new {
+        font-size: 1rem;
+    }
+    .form-heading-new {
+        font-size: 1.5rem;
+        padding-bottom: 0.8rem;
+    }
+    .input-field-new {
+        padding: 0.8rem 1rem;
+    }
+    .label-new {
+        left: 1rem;
+    }
+    .toggle-visibility-button {
+        right: 1rem;
+    }
+    .submit-button-new {
+        font-size: 1.05rem;
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container-new {
+        padding: 1.5rem 1rem;
+        margin: 10px auto;
+        border-radius: 8px;
+    }
+    .title-new {
+        font-size: 1.8rem;
+    }
+    .subtitle-new {
+        font-size: 0.9rem;
+    }
+    .form-heading-new {
+        font-size: 1.3rem;
+        padding-bottom: 0.8rem;
+    }
+    .input-field-new {
+        padding: 0.7rem 0.9rem;
+        font-size: 0.9rem;
+    }
+    .label-new {
+        font-size: 0.75rem;
+        left: 0.9rem;
+    }
+    .toggle-visibility-button {
+        right: 0.9rem;
+        font-size: 1.1rem;
+    }
+    .submit-button-new {
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+    }
+    .link-new {
+        font-size: 0.8rem;
+    }
+}

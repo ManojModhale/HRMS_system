@@ -1,0 +1,317 @@
+/* src/styles/RegisterForm.css */
+
+/* Main form container styles */
+.form-container-new {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 450px; /* Aligned with .account-form from original RegisterPage.css */
+    background-color: rgba(255, 255, 255, 0.9); /* bg-white/90 */
+    backdrop-filter: blur(8px); /* backdrop-blur-md */
+    border-radius: 1rem; /* rounded-2xl (16px) */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl equivalent */
+    padding: 2rem; /* p-8 (32px) */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* space-y-6 (24px) */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* border border-white/10 */
+}
+
+/* Heading for the application title (e.g., TaskFlow) */
+.title-new {
+    font-size: 1.875rem; /* text-3xl (30px) */
+    font-weight: 600; /* font-semibold */
+    background-image: linear-gradient(to right, #3b82f6, #22c55e); /* from-blue-500 to-green-500 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Fallback for browsers not supporting -webkit-text-fill-color */
+    margin-bottom: 0.5rem; /* mb-2 (8px) */
+    text-align: center; /* Center the title */
+}
+
+/* Subtitle under the application title */
+.subtitle-new {
+    font-size: 0.875rem; /* text-sm (14px) */
+    color: #6b7280; /* text-gray-500 */
+    letter-spacing: 0.025em; /* tracking-wide */
+    text-align: center; /* Center the subtitle */
+}
+
+/* Heading for "Create your account" */
+.form-heading-new {
+    font-size: 1.125rem; /* text-lg (18px) */
+    font-weight: 500; /* font-medium */
+    color: #111827; /* text-gray-900 */
+    margin-top: 1rem; /* Added margin */
+}
+
+/* Wrapper for floating label inputs/selects */
+.floating-label-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem; /* Adjusted margin-bottom for single column */
+}
+
+/* Input and Select fields general styling */
+.input-field-new {
+    width: 100%;
+    padding: 0.75rem 1rem; /* px-4 py-3 (12px 16px) */
+    border: 1px solid #d1d5db; /* border border-gray-300 */
+    border-radius: 0.375rem; /* rounded-md (6px) */
+    outline: none; /* focus:outline-none */
+    transition: all 0.3s ease-in-out; /* transition-all duration-300 */
+    background-color: rgba(255, 255, 255, 0.9); /* bg-white/90 */
+    backdrop-filter: blur(4px); /* backdrop-blur-sm */
+    font-size: 1rem; /* Default font size */
+    color: #111827; /* Ensure text color is visible */
+}
+
+/* Input/Select focus states */
+.input-field-new:focus {
+    border-color: transparent; /* focus:border-transparent */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-2 focus:ring-blue-500 */
+}
+
+/* Placeholder visibility for floating labels */
+.input-field-new::placeholder {
+    color: transparent; /* Hide native placeholder */
+}
+
+/* Floating label initial state (when input is empty/not focused) */
+.floating-label-wrapper .label-new {
+    position: absolute;
+    left: 0.5rem; /* left-2 */
+    top: 0.75rem; /* top-3 (aligned with input padding) */
+    color: #9ca3af; /* peer-placeholder-shown:text-gray-400 */
+    font-size: 1rem; /* peer-placeholder-shown:text-base */
+    background-color: transparent;
+    padding: 0 0.25rem; /* px-1 */
+    transition: all 0.3s ease-in-out; /* transition-all duration-300 */
+    pointer-events: none; /* Ensure it doesn't block clicks */
+}
+
+/* Floating label active state (when input is focused or has content) */
+.floating-label-wrapper .input-field-new:focus + .label-new,
+.floating-label-wrapper .input-field-new:not(:placeholder-shown) + .label-new {
+    top: -0.75rem; /* -top-3 */
+    font-size: 0.875rem; /* text-sm */
+    color: #4b5563; /* text-gray-600 */
+    background-color: white; /* bg-white */
+}
+
+/* Toggle visibility button for password fields */
+.toggle-visibility-button {
+    position: absolute;
+    right: 0.75rem; /* right-3 */
+    top: 0.75rem; /* top-3 */
+    color: #6b7280; /* text-gray-500 */
+    width: 1.5rem; /* w-6 */
+    height: 1.5rem; /* h-6 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out; /* transition */
+}
+.toggle-visibility-button:hover {
+    color: #374151; /* hover:text-gray-700 */
+}
+
+/* Arrow for select box - No longer needed but keeping for reference if future selects are added */
+.select-arrow-new {
+    position: absolute;
+    right: 0.75rem; /* right-3 */
+    top: 0.75rem; /* top-3 */
+    pointer-events: none;
+    color: #6b7280; /* text-gray-500 */
+}
+
+/* Error text styling */
+.error-text {
+    color: #ef4444; /* text-red-500 */
+    font-size: 0.875rem; /* text-sm */
+    margin-top: 0.25rem; /* Adjusted to fit below floating label */
+    margin-left: 0.5rem; /* Align with input */
+    margin-bottom: 0.5rem; /* Space before next field */
+}
+/* .error-text.col-span-2 { */ /* Removed as grid is gone */
+/*     grid-column: span 2 / span 2; */
+/* } */
+
+/* Submit button styling */
+.submit-button-new {
+    width: 100%;
+    padding: 0.75rem 1rem; /* py-3 px-4 */
+    background-image: linear-gradient(to right, #3b82f6, #22c55e); /* bg-gradient-to-r from-blue-500 to-green-500 */
+    color: white;
+    font-weight: 600; /* font-semibold */
+    border-radius: 0.375rem; /* rounded-md (6px) */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+    transition: all 0.3s ease-in-out; /* transition-all duration-300 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+.submit-button-new:hover {
+    background-image: linear-gradient(to right, #2563eb, #16a34a); /* hover:from-blue-600 hover:to-green-600 */
+}
+.submit-button-new:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Spinner animation for button */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.submit-button-new svg.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* "Sign In" link styling */
+.link-new {
+    color: #3b82f6; /* text-blue-500 */
+    font-weight: 500; /* font-medium */
+    transition: color 0.3s ease-in-out; /* transition-colors */
+    position: relative; /* For underline effect */
+}
+.link-new:hover {
+    color: #1d4ed8; /* hover:text-blue-700 */
+}
+.link-new::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+.link-new:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Grid layout for first/last name - REMOVED */
+/* .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+} */
+
+/* General spacing */
+.space-y-6 > *:not([hidden]) ~ *:not([hidden]) {
+    margin-top: 1.5rem; /* Tailwind's space-y-6 */
+}
+.mt-6 {
+    margin-top: 1.5rem; /* Tailwind's mt-6 */
+}
+.text-center {
+    text-align: center;
+}
+.text-gray-600 {
+    color: #4b5563; /* text-gray-600 */
+}
+.text-muted { /* Added for Bootstrap compatibility */
+    color: #6c757d !important;
+}
+.font-medium {
+    font-weight: 500;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Responsive adjustments for RegisterForm.css */
+@media (max-width: 768px) {
+    .form-container-new {
+        padding: 2rem 1.5rem;
+        margin: 15px auto;
+    }
+    .title-new {
+        font-size: 1.8rem; /* Adjusted for smaller screens */
+    }
+    .subtitle-new {
+        font-size: 0.8rem; /* Adjusted for smaller screens */
+    }
+    .form-heading-new {
+        font-size: 1.4rem; /* Adjusted for smaller screens */
+        padding-bottom: 0.8rem;
+    }
+    .input-field-new {
+        padding: 0.6rem 0.8rem; /* Adjusted for smaller screens */
+        font-size: 0.9rem;
+    }
+    .label-new {
+        left: 0.8rem; /* Adjusted for smaller screens */
+        top: 0.6rem; /* Adjusted for smaller screens */
+        font-size: 0.7rem;
+    }
+    .floating-label-wrapper .input-field-new:focus + .label-new,
+    .floating-label-wrapper .input-field-new:not(:placeholder-shown) + .label-new {
+        top: -0.6rem; /* Adjusted for smaller screens */
+    }
+    .toggle-visibility-button {
+        right: 0.8rem; /* Adjusted for smaller screens */
+        top: 0.6rem; /* Adjusted for smaller screens */
+        font-size: 1rem;
+    }
+    .submit-button-new {
+        font-size: 0.95rem; /* Adjusted for smaller screens */
+        padding: 0.7rem 1rem;
+    }
+    .error-text {
+        font-size: 0.75rem; /* Adjusted for smaller screens */
+        margin-top: 0.15rem;
+        margin-left: 0.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container-new {
+        padding: 1.2rem 0.8rem;
+        margin: 10px auto;
+        border-radius: 8px;
+    }
+    .title-new {
+        font-size: 1.6rem;
+    }
+    .subtitle-new {
+        font-size: 0.75rem;
+    }
+    .form-heading-new {
+        font-size: 1.2rem;
+        padding-bottom: 0.6rem;
+    }
+    .input-field-new {
+        padding: 0.5rem 0.7rem;
+        font-size: 0.85rem;
+    }
+    .label-new {
+        font-size: 0.7rem;
+        left: 0.7rem;
+        top: 0.5rem;
+    }
+    .floating-label-wrapper .input-field-new:focus + .label-new,
+    .floating-label-wrapper .input-field-new:not(:placeholder-shown) + .label-new {
+        top: -0.5rem;
+    }
+    .toggle-visibility-button {
+        right: 0.7rem;
+        font-size: 0.9rem;
+    }
+    .submit-button-new {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+    }
+    .link-new {
+        font-size: 0.75rem;
+    }
+}

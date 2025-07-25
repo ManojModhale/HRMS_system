@@ -1,0 +1,591 @@
+2025-07-19 23:15:30.727 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-07-19 23:15:30.839 [restartedMain] INFO  c.h.b.HrmsManagerBackendApplication - Starting HrmsManagerBackendApplication using Java 17.0.4.1 with PID 1068 (F:\Secbyte Technologies Internship\Task_2\HRMS\hrms-manager-backend\target\classes started by DELL in F:\Secbyte Technologies Internship\Task_2\HRMS\hrms-manager-backend)
+2025-07-19 23:15:30.842 [restartedMain] DEBUG c.h.b.HrmsManagerBackendApplication - Running with Spring Boot v3.3.13, Spring v6.1.21
+2025-07-19 23:15:30.847 [restartedMain] INFO  c.h.b.HrmsManagerBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-19 23:15:31.015 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-19 23:15:31.015 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-19 23:15:32.768 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-19 23:15:32.957 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 164 ms. Found 2 JPA repository interfaces.
+2025-07-19 23:15:34.354 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8183 (http)
+2025-07-19 23:15:34.381 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2025-07-19 23:15:34.386 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-19 23:15:34.387 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-19 23:15:34.534 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-19 23:15:34.535 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3518 ms
+2025-07-19 23:15:35.032 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-19 23:15:35.179 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-07-19 23:15:35.269 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-19 23:15:35.920 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-19 23:15:35.991 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-19 23:15:36.400 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ab6b6c4
+2025-07-19 23:15:36.406 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-19 23:15:36.589 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-19 23:15:36.593 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-19 23:15:38.532 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-19 23:15:38.854 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-19 23:15:39.794 [restartedMain] DEBUG c.h.backend.config.AuthTokenFilter - Filter 'authTokenFilter' configured for use
+2025-07-19 23:15:40.297 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Found 2 AuthenticationProvider beans, with names [customAuthenticationProvider, daoAuthenticationProvider]. Global Authentication Manager will not be configured with AuthenticationProviders. Consider publishing a single AuthenticationProvider bean, or wiring your Providers directly using the DSL.
+2025-07-19 23:15:40.299 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-07-19 23:15:40.949 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, AuthTokenFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-19 23:15:41.590 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-07-19 23:15:41.640 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8183"]
+2025-07-19 23:15:41.695 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8183 (http) with context path '/'
+2025-07-19 23:15:41.723 [restartedMain] INFO  c.h.b.HrmsManagerBackendApplication - Started HrmsManagerBackendApplication in 12.273 seconds (process running for 14.87)
+2025-07-19 23:15:41.849 [http-nio-8183-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-19 23:15:41.849 [http-nio-8183-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-19 23:15:41.852 [http-nio-8183-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-07-19 23:15:41.905 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:15:41.904 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:15:41.904 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:15:41.904 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:15:41.904 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:15:41.923 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:15:41.923 [http-nio-8183-exec-3] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:15:41.923 [http-nio-8183-exec-1] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:15:41.923 [http-nio-8183-exec-5] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:15:41.923 [http-nio-8183-exec-2] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:15:41.931 [http-nio-8183-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:15:41.932 [http-nio-8183-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:15:41.932 [http-nio-8183-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:15:41.931 [http-nio-8183-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:15:41.932 [http-nio-8183-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:15:41.938 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:15:41.938 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:15:41.938 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:15:41.938 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:15:41.938 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:15:41.991 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:15:41.991 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:15:41.992 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:15:41.993 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:15:41.993 [http-nio-8183-exec-6] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:15:41.993 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:15:41.993 [http-nio-8183-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:15:41.993 [http-nio-8183-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:15:41.993 [http-nio-8183-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:15:41.994 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:15:41.994 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:15:41.993 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:15:42.000 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:15:42.001 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:15:42.002 [http-nio-8183-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:15:42.002 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:15:42.023 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:15:42.024 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:15:42.026 [http-nio-8183-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:15:42.038 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:20:25.439 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-07-19 23:20:25.444 [RMI TCP Connection(13)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8183"]
+2025-07-19 23:20:25.519 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-19 23:20:25.524 [RMI TCP Connection(13)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-19 23:20:25.582 [RMI TCP Connection(13)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-19 23:25:12.871 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-07-19 23:25:12.941 [restartedMain] INFO  c.h.b.HrmsManagerBackendApplication - Starting HrmsManagerBackendApplication using Java 17.0.4.1 with PID 2352 (F:\Secbyte Technologies Internship\Task_2\HRMS\hrms-manager-backend\target\classes started by DELL in F:\Secbyte Technologies Internship\Task_2\HRMS\hrms-manager-backend)
+2025-07-19 23:25:12.942 [restartedMain] DEBUG c.h.b.HrmsManagerBackendApplication - Running with Spring Boot v3.3.13, Spring v6.1.21
+2025-07-19 23:25:12.943 [restartedMain] INFO  c.h.b.HrmsManagerBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-19 23:25:13.008 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-19 23:25:13.009 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-19 23:25:14.267 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-19 23:25:14.354 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+2025-07-19 23:25:15.098 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8183 (http)
+2025-07-19 23:25:15.115 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2025-07-19 23:25:15.119 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-19 23:25:15.119 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-19 23:25:15.229 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-19 23:25:15.230 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2220 ms
+2025-07-19 23:25:15.430 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-19 23:25:15.541 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-07-19 23:25:15.620 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-19 23:25:16.058 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-19 23:25:16.098 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-19 23:25:16.324 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45a3206e
+2025-07-19 23:25:16.327 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-19 23:25:16.389 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-19 23:25:16.391 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-19 23:25:17.491 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-19 23:25:17.598 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-19 23:25:18.049 [restartedMain] DEBUG c.h.backend.config.AuthTokenFilter - Filter 'authTokenFilter' configured for use
+2025-07-19 23:25:18.258 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Found 2 AuthenticationProvider beans, with names [customAuthenticationProvider, daoAuthenticationProvider]. Global Authentication Manager will not be configured with AuthenticationProviders. Consider publishing a single AuthenticationProvider bean, or wiring your Providers directly using the DSL.
+2025-07-19 23:25:18.260 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-07-19 23:25:18.624 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, AuthTokenFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-19 23:25:18.982 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-07-19 23:25:19.011 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8183"]
+2025-07-19 23:25:19.049 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8183 (http) with context path '/'
+2025-07-19 23:25:19.063 [restartedMain] INFO  c.h.b.HrmsManagerBackendApplication - Started HrmsManagerBackendApplication in 6.842 seconds (process running for 8.2)
+2025-07-19 23:25:38.728 [http-nio-8183-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-19 23:25:38.728 [http-nio-8183-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-19 23:25:38.730 [http-nio-8183-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-07-19 23:25:38.777 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:25:38.777 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:25:38.779 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:25:38.780 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:25:38.777 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:25:38.794 [http-nio-8183-exec-5] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:25:38.796 [http-nio-8183-exec-1] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:25:38.796 [http-nio-8183-exec-2] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:25:38.797 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:25:38.797 [http-nio-8183-exec-3] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:25:38.803 [http-nio-8183-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:25:38.804 [http-nio-8183-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:25:38.805 [http-nio-8183-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:25:38.803 [http-nio-8183-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:25:38.806 [http-nio-8183-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:25:38.818 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:25:38.819 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:25:38.818 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:25:38.823 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:25:38.818 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:25:38.874 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:25:38.875 [http-nio-8183-exec-6] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:25:38.875 [http-nio-8183-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:25:38.876 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:25:38.876 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:25:38.876 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:25:38.876 [http-nio-8183-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:25:38.877 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:25:38.877 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:25:38.877 [http-nio-8183-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:25:38.967 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:25:38.877 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:25:38.880 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:25:39.046 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:25:39.046 [http-nio-8183-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:25:39.046 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:25:39.046 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:25:39.046 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:25:39.047 [http-nio-8183-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:25:39.049 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:26:04.400 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:26:04.400 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:26:04.400 [http-nio-8183-exec-6] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:26:04.401 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:26:04.401 [http-nio-8183-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:26:04.401 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:26:04.402 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/login
+2025-07-19 23:26:04.402 [http-nio-8183-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:26:04.403 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/auth/login
+2025-07-19 23:26:04.403 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:26:04.403 [http-nio-8183-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:26:04.403 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/auth/login
+2025-07-19 23:26:04.413 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:26:04.414 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:26:04.418 [http-nio-8183-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:26:04.420 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-07-19 23:26:04.420 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:26:04.420 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/auth/login
+2025-07-19 23:26:04.424 [http-nio-8183-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:26:04.420 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:26:04.425 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:26:04.426 [http-nio-8183-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:26:04.427 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-07-19 23:26:04.427 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:26:04.471 [http-nio-8183-exec-10] INFO  c.h.b.controller.AuthController - Attempting login for user: Ganesh15
+2025-07-19 23:26:04.629 [http-nio-8183-exec-10] INFO  c.h.b.service.UserDetailsServiceImpl - Attempting to load user by username: Ganesh15
+2025-07-19 23:26:04.812 [http-nio-8183-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.employee_id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-19 23:26:04.833 [http-nio-8183-exec-10] INFO  c.h.b.service.UserDetailsServiceImpl - User Ganesh15 found with role: EMPLOYEE
+2025-07-19 23:26:04.933 [http-nio-8183-exec-10] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-07-19 23:26:04.979 [http-nio-8183-exec-10] INFO  c.h.b.controller.AuthController - User Ganesh15 logged in successfully with role: EMPLOYEE
+2025-07-19 23:26:05.046 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:26:05.046 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:26:05.047 [http-nio-8183-exec-1] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:26:05.047 [http-nio-8183-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:26:05.047 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:26:05.047 [http-nio-8183-exec-5] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:26:05.048 [http-nio-8183-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:26:05.048 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:26:05.059 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:26:05.061 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:26:05.206 [http-nio-8183-exec-4] INFO  c.h.b.service.UserDetailsServiceImpl - Attempting to load user by username: Ganesh15
+2025-07-19 23:26:05.209 [http-nio-8183-exec-5] INFO  c.h.b.service.UserDetailsServiceImpl - Attempting to load user by username: Ganesh15
+2025-07-19 23:26:05.211 [http-nio-8183-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.employee_id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-19 23:26:05.215 [http-nio-8183-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.employee_id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-19 23:26:05.222 [http-nio-8183-exec-5] INFO  c.h.b.service.UserDetailsServiceImpl - User Ganesh15 found with role: EMPLOYEE
+2025-07-19 23:26:05.224 [http-nio-8183-exec-5] DEBUG c.h.backend.config.AuthTokenFilter - Loaded UserDetails for database user: Ganesh15 (ID: 4)
+2025-07-19 23:26:05.225 [http-nio-8183-exec-5] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: Ganesh15 (ID: 4, Role: EMPLOYEE)
+2025-07-19 23:26:05.226 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:26:05.227 [http-nio-8183-exec-4] INFO  c.h.b.service.UserDetailsServiceImpl - User Ganesh15 found with role: EMPLOYEE
+2025-07-19 23:26:05.232 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - Loaded UserDetails for database user: Ganesh15 (ID: 4)
+2025-07-19 23:26:05.232 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: Ganesh15 (ID: 4, Role: EMPLOYEE)
+2025-07-19 23:26:05.233 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:30:36.083 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:30:36.087 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/login
+2025-07-19 23:30:36.087 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:30:36.088 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:30:36.088 [http-nio-8183-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:30:36.088 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:30:36.090 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:30:36.093 [http-nio-8183-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:30:36.094 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:30:36.088 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/auth/login
+2025-07-19 23:30:36.096 [http-nio-8183-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:30:36.096 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/auth/login
+2025-07-19 23:30:36.102 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:30:36.106 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:30:36.112 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-07-19 23:30:36.120 [http-nio-8183-exec-10] INFO  c.h.b.service.UserDetailsServiceImpl - Attempting to load user by username: Ganesh15
+2025-07-19 23:30:36.120 [http-nio-8183-exec-7] INFO  c.h.b.service.UserDetailsServiceImpl - Attempting to load user by username: Ganesh15
+2025-07-19 23:30:36.122 [http-nio-8183-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.employee_id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-19 23:30:36.136 [http-nio-8183-exec-7] INFO  c.h.b.service.UserDetailsServiceImpl - User Ganesh15 found with role: EMPLOYEE
+2025-07-19 23:30:36.138 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - Loaded UserDetails for database user: Ganesh15 (ID: 4)
+2025-07-19 23:30:36.138 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: Ganesh15 (ID: 4, Role: EMPLOYEE)
+2025-07-19 23:30:36.138 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:30:36.129 [http-nio-8183-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.employee_id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-19 23:30:36.144 [http-nio-8183-exec-8] INFO  c.h.b.service.UserDetailsServiceImpl - Attempting to load user by username: Ganesh15
+2025-07-19 23:30:36.150 [http-nio-8183-exec-10] INFO  c.h.b.service.UserDetailsServiceImpl - User Ganesh15 found with role: EMPLOYEE
+2025-07-19 23:30:36.154 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - Loaded UserDetails for database user: Ganesh15 (ID: 4)
+2025-07-19 23:30:36.155 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: Ganesh15 (ID: 4, Role: EMPLOYEE)
+2025-07-19 23:30:36.155 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:30:36.155 [http-nio-8183-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.employee_id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-19 23:30:36.168 [http-nio-8183-exec-8] INFO  c.h.b.service.UserDetailsServiceImpl - User Ganesh15 found with role: EMPLOYEE
+2025-07-19 23:30:36.176 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - Loaded UserDetails for database user: Ganesh15 (ID: 4)
+2025-07-19 23:30:36.176 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: Ganesh15 (ID: 4, Role: EMPLOYEE)
+2025-07-19 23:30:36.177 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-07-19 23:30:36.185 [http-nio-8183-exec-8] INFO  c.h.b.controller.AuthController - Attempting login for user: superadmin
+2025-07-19 23:30:36.189 [http-nio-8183-exec-8] INFO  c.h.b.controller.AuthController - User superadmin logged in successfully with role: ADMIN
+2025-07-19 23:30:36.211 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:30:36.213 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:30:36.246 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:30:36.252 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:30:36.252 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:30:36.250 [http-nio-8183-exec-1] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:30:36.254 [http-nio-8183-exec-1] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:30:36.367 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:48:30.232 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:48:30.232 [http-nio-8183-exec-2] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:48:30.232 [http-nio-8183-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:48:30.232 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:48:30.236 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:48:30.245 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:48:30.246 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:48:30.246 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:48:30.255 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:48:30.267 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:48:30.267 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:48:30.267 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:48:30.280 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:48:30.286 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:48:30.286 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:48:30.287 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:48:30.301 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:48:30.306 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:48:30.307 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:48:30.307 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:48:30.321 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:48:30.328 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:48:30.328 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:48:30.328 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:49:02.831 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:49:02.831 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:49:02.832 [http-nio-8183-exec-5] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:49:02.832 [http-nio-8183-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:49:02.832 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:49:02.832 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/login
+2025-07-19 23:49:02.832 [http-nio-8183-exec-3] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/auth/login
+2025-07-19 23:49:02.832 [http-nio-8183-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:49:02.832 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/auth/login
+2025-07-19 23:49:02.833 [http-nio-8183-exec-1] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:49:02.833 [http-nio-8183-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:49:02.833 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:49:02.836 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-07-19 23:49:02.838 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:49:02.843 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:49:02.862 [http-nio-8183-exec-6] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:49:02.862 [http-nio-8183-exec-6] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:49:02.862 [http-nio-8183-exec-2] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:49:02.862 [http-nio-8183-exec-2] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:49:02.862 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-07-19 23:49:02.863 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:49:02.863 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:49:02.863 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:49:02.864 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:49:02.881 [http-nio-8183-exec-6] INFO  c.h.b.controller.AuthController - Attempting login for user: superadmin
+2025-07-19 23:49:02.886 [http-nio-8183-exec-6] INFO  c.h.b.controller.AuthController - User superadmin logged in successfully with role: ADMIN
+2025-07-19 23:49:02.921 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:49:02.936 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:49:02.936 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:49:02.936 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:49:04.445 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:49:04.447 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:49:04.461 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:49:04.464 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:49:04.464 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:49:04.467 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:49:04.467 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:49:04.467 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:49:16.267 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:49:16.267 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:49:16.267 [http-nio-8183-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:49:16.267 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:49:16.274 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:49:16.275 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:49:16.275 [http-nio-8183-exec-3] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:49:16.275 [http-nio-8183-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:49:16.275 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:49:16.275 [http-nio-8183-exec-1] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:49:16.276 [http-nio-8183-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:49:16.276 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:49:16.276 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:49:16.276 [http-nio-8183-exec-5] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:49:16.276 [http-nio-8183-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:49:16.276 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:49:16.276 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:49:16.277 [http-nio-8183-exec-2] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:49:16.278 [http-nio-8183-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:49:16.282 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:49:16.282 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:49:16.283 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:49:16.286 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:49:16.292 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:49:16.294 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:49:16.295 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:49:16.295 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:49:16.295 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:49:16.308 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:49:16.308 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:49:16.309 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:49:16.316 [http-nio-8183-exec-6] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:49:16.320 [http-nio-8183-exec-2] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:49:16.321 [http-nio-8183-exec-2] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:49:16.321 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:49:16.322 [http-nio-8183-exec-1] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:49:16.322 [http-nio-8183-exec-6] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:49:16.322 [http-nio-8183-exec-1] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:49:16.326 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:49:16.326 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:53:02.301 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:53:02.302 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:53:02.302 [http-nio-8183-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:53:02.303 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/login
+2025-07-19 23:53:02.303 [http-nio-8183-exec-6] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/auth/login
+2025-07-19 23:53:02.303 [http-nio-8183-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:53:02.303 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/auth/login
+2025-07-19 23:53:02.303 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:53:02.303 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:53:02.303 [http-nio-8183-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:53:02.303 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:53:02.305 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:53:02.311 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:53:02.311 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-07-19 23:53:02.311 [http-nio-8183-exec-1] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/auth/login
+2025-07-19 23:53:02.311 [http-nio-8183-exec-2] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:53:02.311 [http-nio-8183-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:53:02.311 [http-nio-8183-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:53:02.311 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:53:02.311 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-07-19 23:53:02.312 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:53:02.313 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:53:02.313 [http-nio-8183-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:53:02.313 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:53:02.321 [http-nio-8183-exec-1] INFO  c.h.b.controller.AuthController - Attempting login for user: superadmin
+2025-07-19 23:53:02.323 [http-nio-8183-exec-1] INFO  c.h.b.controller.AuthController - User superadmin logged in successfully with role: ADMIN
+2025-07-19 23:53:02.345 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:53:02.347 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:53:02.349 [http-nio-8183-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:53:02.350 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:53:02.356 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:53:02.363 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:53:02.363 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:53:02.363 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:53:03.874 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:53:03.875 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:53:03.895 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:53:03.895 [http-nio-8183-exec-5] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:53:03.895 [http-nio-8183-exec-5] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:53:03.896 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:53:03.896 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:53:03.896 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:53:31.016 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:53:31.018 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:53:31.018 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:53:31.018 [http-nio-8183-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:53:31.019 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:53:31.029 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:53:31.029 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:53:31.029 [http-nio-8183-exec-2] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:53:31.029 [http-nio-8183-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:53:31.030 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:53:31.029 [http-nio-8183-exec-6] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:53:31.059 [http-nio-8183-exec-3] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:53:31.060 [http-nio-8183-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:53:31.060 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:53:31.028 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:53:31.063 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:53:31.063 [http-nio-8183-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:53:31.036 [http-nio-8183-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:53:31.077 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:53:31.078 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:53:31.080 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:53:31.082 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:53:31.091 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:53:31.099 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:53:31.099 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:53:31.104 [http-nio-8183-exec-3] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:53:31.105 [http-nio-8183-exec-3] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:53:31.105 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:53:31.111 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:53:31.111 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:53:31.111 [http-nio-8183-exec-10] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:53:31.111 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:53:31.111 [http-nio-8183-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:53:31.111 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:53:31.111 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:53:31.111 [http-nio-8183-exec-8] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:53:31.111 [http-nio-8183-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:53:31.123 [http-nio-8183-exec-1] DEBUG c.h.backend.config.AuthTokenFilter - Reconstructed UserDetails for hardcoded Admin from token: superadmin (ID: 0)
+2025-07-19 23:53:31.180 [http-nio-8183-exec-1] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: superadmin (ID: 0, Role: ADMIN)
+2025-07-19 23:53:31.184 [http-nio-8183-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:54:17.060 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/login
+2025-07-19 23:54:17.060 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:54:17.060 [http-nio-8183-exec-2] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:54:17.060 [http-nio-8183-exec-5] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/auth/login
+2025-07-19 23:54:17.062 [http-nio-8183-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:54:17.064 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/auth/login
+2025-07-19 23:54:17.060 [http-nio-8183-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:54:17.064 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:54:17.067 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:54:17.068 [http-nio-8183-exec-7] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:54:17.068 [http-nio-8183-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:54:17.068 [http-nio-8183-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:54:17.080 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:54:17.080 [http-nio-8183-exec-2] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:54:17.081 [http-nio-8183-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:54:17.090 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:54:17.090 [http-nio-8183-exec-6] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:54:17.082 [http-nio-8183-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:54:17.093 [http-nio-8183-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:54:17.099 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-07-19 23:54:17.099 [http-nio-8183-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:54:17.099 [http-nio-8183-exec-5] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/auth/login
+2025-07-19 23:54:17.099 [http-nio-8183-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:54:17.100 [http-nio-8183-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-07-19 23:54:17.106 [http-nio-8183-exec-5] INFO  c.h.b.controller.AuthController - Attempting login for user: Ganesh15
+2025-07-19 23:54:17.110 [http-nio-8183-exec-5] INFO  c.h.b.service.UserDetailsServiceImpl - Attempting to load user by username: Ganesh15
+2025-07-19 23:54:17.120 [http-nio-8183-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.employee_id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-19 23:54:17.124 [http-nio-8183-exec-5] INFO  c.h.b.service.UserDetailsServiceImpl - User Ganesh15 found with role: EMPLOYEE
+2025-07-19 23:54:17.245 [http-nio-8183-exec-5] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-07-19 23:54:17.247 [http-nio-8183-exec-5] INFO  c.h.b.controller.AuthController - User Ganesh15 logged in successfully with role: EMPLOYEE
+2025-07-19 23:54:18.786 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/frontend-logs
+2025-07-19 23:54:18.787 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - No JWT token found in request for path: /api/frontend-logs
+2025-07-19 23:54:18.787 [http-nio-8183-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-19 23:54:18.787 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured OPTIONS /api/frontend-logs
+2025-07-19 23:54:18.793 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:54:18.821 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:54:18.823 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/frontend-logs
+2025-07-19 23:54:18.838 [http-nio-8183-exec-4] INFO  c.h.b.service.UserDetailsServiceImpl - Attempting to load user by username: Ganesh15
+2025-07-19 23:54:18.855 [http-nio-8183-exec-3] INFO  c.h.b.service.UserDetailsServiceImpl - Attempting to load user by username: Ganesh15
+2025-07-19 23:54:18.858 [http-nio-8183-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.employee_id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-19 23:54:18.863 [http-nio-8183-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.employee_id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-19 23:54:18.863 [http-nio-8183-exec-4] INFO  c.h.b.service.UserDetailsServiceImpl - User Ganesh15 found with role: EMPLOYEE
+2025-07-19 23:54:18.866 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - Loaded UserDetails for database user: Ganesh15 (ID: 4)
+2025-07-19 23:54:18.866 [http-nio-8183-exec-4] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: Ganesh15 (ID: 4, Role: EMPLOYEE)
+2025-07-19 23:54:18.866 [http-nio-8183-exec-3] INFO  c.h.b.service.UserDetailsServiceImpl - User Ganesh15 found with role: EMPLOYEE
+2025-07-19 23:54:18.866 [http-nio-8183-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:54:18.868 [http-nio-8183-exec-9] INFO  c.h.b.service.UserDetailsServiceImpl - Attempting to load user by username: Ganesh15
+2025-07-19 23:54:18.868 [http-nio-8183-exec-3] DEBUG c.h.backend.config.AuthTokenFilter - Loaded UserDetails for database user: Ganesh15 (ID: 4)
+2025-07-19 23:54:18.869 [http-nio-8183-exec-3] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: Ganesh15 (ID: 4, Role: EMPLOYEE)
+2025-07-19 23:54:18.869 [http-nio-8183-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
+2025-07-19 23:54:18.876 [http-nio-8183-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.employee_id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-07-19 23:54:18.882 [http-nio-8183-exec-9] INFO  c.h.b.service.UserDetailsServiceImpl - User Ganesh15 found with role: EMPLOYEE
+2025-07-19 23:54:18.884 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - Loaded UserDetails for database user: Ganesh15 (ID: 4)
+2025-07-19 23:54:18.884 [http-nio-8183-exec-9] DEBUG c.h.backend.config.AuthTokenFilter - Successfully set authentication for user: Ganesh15 (ID: 4, Role: EMPLOYEE)
+2025-07-19 23:54:18.884 [http-nio-8183-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/frontend-logs
