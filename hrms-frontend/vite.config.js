@@ -6,10 +6,10 @@ export default defineConfig({
   plugins: [
     react(),
   ],
-  server: {
+  /*server: {
     open: true,
     port: 5173
-  },
+  },*/
   publicDir: 'public',
   /*esbuild: {
     loader: {

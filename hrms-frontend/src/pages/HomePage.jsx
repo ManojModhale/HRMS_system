@@ -51,7 +51,7 @@ const HomePage = () => {
                 message: formData.message
             };
 
-            const response = await fetch('http://localhost:8183/api/auth/contact-us', {
+            const response = await fetch('https://hrms-system-backend.onrender.com/api/auth/contact-us', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

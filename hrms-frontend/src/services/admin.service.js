@@ -3,7 +3,8 @@ import axios from 'axios';
 import authService from './auth.service';
 import loggingService from './logging.service';
 
-const ADMIN_BASE_API_URL = 'http://localhost:8183/api/admin/';
+//const ADMIN_BASE_API_URL = 'http://localhost:8183/api/admin/';  
+const ADMIN_BASE_API_URL = 'https://hrms-system-backend.onrender.com/api/admin/';
 //const ADMIN_ATTENDANCE_API_URL = ADMIN_BASE_API_URL + 'attendance/';
 // Add other admin-specific API URLs here as needed
 

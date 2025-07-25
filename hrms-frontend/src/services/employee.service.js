@@ -3,11 +3,15 @@ import axios from 'axios';
 import authService from './auth.service'; // To get the current user's token and auth header
 import loggingService from './logging.service'; // Import your logging service
 
-const API_BASE_URL = 'http://localhost:8183/api/'; // Your Spring Boot backend base URL
+//const API_BASE_URL = 'http://localhost:8183/api/'; // Your Spring Boot backend base URL
+const API_BASE_URL = 'https://hrms-system-backend.onrender.com/api/';
 // Base URL for employee endpoints (existing)
-const EMPLOYEE_API_URL = 'http://localhost:8183/api/employee/';
+//const EMPLOYEE_API_URL = 'http://localhost:8183/api/employee/';
+const EMPLOYEE_API_URL = 'https://hrms-system-backend.onrender.com/api/employee/';
 // Base URL for admin endpoints (existing, will be moved to admin.service.js later)
-const ADMIN_API_URL = 'http://localhost:8183/api/admin/';
+//const ADMIN_API_URL = 'http://localhost:8183/api/admin/';
+const ADMIN_API_URL = 'https://hrms-system-backend.onrender.com/api/admin/';
+
 
 class EmployeeService {
 

@@ -2,7 +2,8 @@
 import axios from 'axios';
 
 // IMPORTANT: Replace with the actual URL of your Spring Boot backend's logging endpoint
-const LOGGING_API_URL = 'http://localhost:8183/api/frontend-logs';
+//const LOGGING_API_URL = 'http://localhost:8183/api/frontend-logs';
+const LOGGING_API_URL = 'https://hrms-system-backend.onrender.com/api/frontend-logs'
 
 const log = async (level, message, context = {}) => {
   try {

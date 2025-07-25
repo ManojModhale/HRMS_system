@@ -4,7 +4,9 @@ import loggingService from './logging.service'; // Import your logging service
 //import { jwtDecode } from 'jwt-decode'; // Ensure 'jwt-decode' is installed: npm install jwt-decode
 
 // IMPORTANT: Replace with the actual URL of your Spring Boot backend's auth endpoint
-const API_URL = 'http://localhost:8183/api/auth/';
+//const API_URL = 'http://localhost:8183/api/auth/';  
+
+const API_URL = 'https://hrms-system-backend.onrender.com/api/auth/';  
 
 const USER_KEY = 'user'; // Key for storing user data in localStorage
 

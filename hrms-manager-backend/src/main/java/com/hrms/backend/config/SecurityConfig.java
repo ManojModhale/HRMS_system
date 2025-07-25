@@ -129,7 +129,7 @@ public class SecurityConfig {
 		CorsConfiguration config = new CorsConfiguration();
 		config.setAllowCredentials(true);
 		// Allow your React frontend URL. In development, you might use "*" or "http://localhost:5173"
-		config.addAllowedOriginPattern("*"); // Allows all origins during development. Refine for production.
+		config.addAllowedOriginPattern("https://hrms-system-frontend.onrender.com"); // Allows all origins during development. Refine for production.
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         source.registerCorsConfiguration("/**", config);
@@ -144,7 +144,7 @@ public class SecurityConfig {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         // Explicitly allow your frontend origin. Avoid "*" in production.
-        config.setAllowedOrigins(Arrays.asList("http://localhost:5173")); // Your React frontend URL
+        config.setAllowedOrigins(Arrays.asList("https://hrms-system-frontend.onrender.com")); // Your React frontend URL
         config.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type", "X-Requested-With", "Accept")); // Explicitly list headers
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS")); // Allowed HTTP methods
         config.setMaxAge(3600L); // Cache pre-flight response for 1 hour
